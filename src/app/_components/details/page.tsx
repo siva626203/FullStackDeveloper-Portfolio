@@ -18,7 +18,7 @@ function page() {
           className={myfont.className}
           sequence={[
             // Same substring at the start will only be typed out once, initially
-            "I Am a MERN Stack Developer ",
+            "I Am a MERN Stack Developer",
             1000,
             "I Am a Blockchain Researcher",
             1000,
