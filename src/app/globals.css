@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0cm;
+  padding: 0cap;
+}
+body{
+  background-color: none;
+  background-image: linear-gradient(to left, #5EFCE8 10%, #736EFE 100%);
+  
+}
+h1{
+font-weight: 400;
+font-size: 200%;
+}
+h2{
+  font-size: x-large;
+}
