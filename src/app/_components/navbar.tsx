@@ -4,15 +4,19 @@
 import drop from '../../images/icons8-drag-list-down-50.png' 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 function Navbar() {
   const [open,setOpen]=useState(false)
+  const winclick=(e:any,val:string)=>{
+    console.log(e.type,val)
+    window.scrollBy(0,100)
+  }
   return (
     <>
       <div className="relative flex md:text-center md:flex bg-orange-400 py-3 pl-3 border-doubled border-[#c3195d] rounded-md border-4">
         <h1 className="font-bold text-4xl animate-pulse">PORTFOLIO</h1>
         <div className="hidden md:inline lg:inline mt-2 md:ml-[18%] lg:ml-[24%]">
-          <Link href={"Projects"} className="md:ml-8 lg:ml-26">
+          <Link onClick={(e) =>winclick(e,"experience") } className="md:ml-8 lg:ml-26" href={''}>
             Experience
           </Link>
           <Link href={"Projects"} className="md:ml-8 lg:ml-26">
@@ -29,7 +33,7 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="absolute top-0 right-0 h-16 w-16">
+      <div className="absolute top-0 right-0 h-16 w-16 flex-row">
         <Image
           src={drop}
           className="md:hidden float-right w-8  mt-4 hover:bg-gray-400 rounded hover:w-10 absolute"
