@@ -9,7 +9,7 @@ function page() {
         <div data-aos="fade-out-right">
           <h2 className="text-center font-bebas">Experience</h2>
           <h3 className="font-bebas ml-10">
-            MERN Stack Developer || NighaTech || Nov 2023 - Nov2024
+            MERN Stack Developer || NighaTech || Nov 2023 - Nov 2024
           </h3>
           <h3 className="ml-3 font-normal lg:w-[500px] w-auto text-center md:ml-9">
             I have Completed two Projects Related to Blockchain Technology,One
@@ -23,7 +23,7 @@ function page() {
           </h3>
           <br/>
           <h3 className="font-bebas ml-10">
-            Web Development Internship || Oasis Infobyte || May 2022 
+            Web Development Internship || Oasis Infobyte || June 2022 
           </h3>
           <h3 className="ml-3 font-normal lg:w-[500px] w-auto text-center md:ml-9">
             In this Internship i complete the Basic Task of HTML,CSS,JS. In the organization is just for assigned me to complete the some basic task about Calculator Development,Clock Development, Form Validation. 
@@ -31,7 +31,7 @@ function page() {
         </div>
         <div data-aos="fade-down-right">
           <Image
-            className="hidden lg:inline-flex w-[300px] animate-bounce-slow mr-[130px] "
+            className="hidden lg:inline-flex w-[300px] animate-bounce-slow mr-[130px] mt-32"
             src={I1}
             alt="PNG"
           />

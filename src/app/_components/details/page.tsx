@@ -31,7 +31,7 @@ useEffect(() => {
         <Image
           src={bg}
           alt="logo"
-          className="hidden md:inline absolute w-[300px] md:mx-[37%] md:mt-20 animate-bounce-top"
+          className="hidden lg:inline absolute w-[300px] md:mx-[37%] md:mt-20 animate-bounce-top"
         />
       </div>
       <div className="flex justify-between">
