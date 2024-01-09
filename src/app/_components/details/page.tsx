@@ -31,7 +31,7 @@ useEffect(() => {
         <Image
           src={bg}
           alt="logo"
-          className="hidden md:inline absolute w-[300px] md:mx-[37%] md:mt-20"
+          className="hidden lg:inline absolute w-[300px] md:mx-[37%] md:mt-20 animate-bounce-top"
         />
       </div>
       <div className="flex justify-between">
@@ -54,19 +54,16 @@ useEffect(() => {
             repeat={Infinity}
           />
         </div>
-        <div
-          className="static "
-          data-aos="fade-down"
-        >
+        <div className="static " data-aos="fade-down">
           <Image
-            data-aos="fade-in"
+            
             src={profile}
             alt="profile"
-            className="lg:w-[300px] md:w-[200px] w-[130px] order-last  opacity-70 lg:my-20 md:my-20 my-12 
+            className="lg:w-[300px] md:w-[200px] w-[130px] order-last  opacity-60 hover:opacity-80 lg:my-20 md:my-20 my-12 
           shadow-lg shadow-indigo-500/50 lg:mr-16 md:mr-16 m-3 hover:border-x-pink-600 
-          hover:border-y-lime-200 border-2 border-indigo-600 hover:skew-y-3 
+          hover:border-y-lime-200 border-2 border-indigo-600 
           hover:transition border-dashed hover:-translate-y-2 duration-600 delay-300 
-          hover:opacity-80 hover:delay-300"
+           hover:delay-300"
           />
         </div>
       </div>
