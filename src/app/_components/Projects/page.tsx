@@ -9,7 +9,7 @@ function page() {
         <div className="md:w-1/2 w-auto" data-aos="flip-left">
           <h2 className="font-bebas text-center">Projects</h2>
           <h3 className="font-bold text-center">Wavemaker</h3>
-          <p className="mx-10 my-3 lg:h-[280px] md:h-56">
+          <p className="mx-5 my-3 lg:h-[280px] md:h-56">
             Wavemaker is ERC20 Token Create and Modify the Token Details.ERC20 -
             OpenZeppelin is provide the access to create the ERC20 Smart
             Contract for Token Creation. One token is equal to Another Token
@@ -22,7 +22,7 @@ function page() {
           <h3 className="font-bold text-center">
             SKC Event Registration Application
           </h3>
-          <p className="mx-10 my-3 lg:h-[280px md:h-56]">
+          <p className="mx-5 my-3 lg:h-[280px md:h-56]">
             SKC Event Registration Application is used to other college's can
             apply their details and students participating Events details.In
             this Development i have learned Team Management, Event Management
