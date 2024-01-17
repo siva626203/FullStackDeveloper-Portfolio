@@ -26,7 +26,7 @@ function page() {
               <SocialIcon url="https://www.instagram.com/software_tamilan_official/" /><br/><br/>
               <SocialIcon url="https://twitter.com/SoftwaretamilN" />
             </center>
-          b</div>
+          </div>
         </div>
       </>
     );
