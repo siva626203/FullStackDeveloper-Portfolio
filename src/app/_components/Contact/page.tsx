@@ -10,7 +10,7 @@ function page() {
             <h2 className="font-bebas text-center">CV & Githup</h2>
             <br />
             <center>
-              <SocialIcon url="https://pdf.ac/36DZiN"></SocialIcon>
+              <SocialIcon url="https://drive.google.com/file/d/1o336eKn7bLaiBNQqa2NcWO8rITAFnxEF/view?usp=sharing"></SocialIcon>
             </center>
            <br/>
             <center>
