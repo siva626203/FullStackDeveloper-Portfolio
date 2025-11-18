@@ -21,7 +21,7 @@ function page() {
             <Image src={CA} className="w-[300px] " alt="IIT" />
           </div>
         </center>
-        <h1 className="text-center mt-5 font-bebas capitalize">
+        <div className="text-center mt-5 font-bebas capitalize">
           Internship Certificate
           <h2 className="underline text-center decoration-double decoration-yellow-300">
             Oasis Infobyte
@@ -32,7 +32,7 @@ function page() {
               <Image src={C2} className="w-[300px] " alt="IIT" />
             </div>
           </center>
-        </h1>
+        </div>
         <h1 className="text-center mt-5 font-bebas capitalize">
           Courses Learning Certificates
         </h1>
