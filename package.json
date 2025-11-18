@@ -11,12 +11,17 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
+    "@playwright/test": "^1.56.1",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
     "aos": "^2.3.4",
+    "framer-motion": "^12.23.24",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "react-type-animation": "^3.2.0",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "three": "^0.181.1"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
