@@ -96,10 +96,72 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "gradient-x": {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+        "gradient-y": {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "center top",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "center bottom",
+          },
+        },
+        "gradient-xy": {
+          "0%, 100%": {
+            "background-size": "400% 400%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "400% 400%",
+            "background-position": "right center",
+          },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        "float-slow": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        glow: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
+        "pulse-glow": {
+          "0%, 100%": {
+            opacity: "1",
+            boxShadow: "0 0 20px rgba(168, 85, 247, 0.4)",
+          },
+          "50%": {
+            opacity: "0.8",
+            boxShadow: "0 0 40px rgba(168, 85, 247, 0.6)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "gradient-x": "gradient-x 15s ease infinite",
+        "gradient-y": "gradient-y 15s ease infinite",
+        "gradient-xy": "gradient-xy 15s ease infinite",
+        float: "float 6s ease-in-out infinite",
+        "float-slow": "float-slow 8s ease-in-out infinite",
+        glow: "glow 2s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+      },
+      backdropBlur: {
+        xs: "2px",
       },
     },
   },
