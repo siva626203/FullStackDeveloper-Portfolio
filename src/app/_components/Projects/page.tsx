@@ -6,9 +6,10 @@ import React, {
     useState,
     Suspense,
     useEffect,
+    useMemo,
   } from "react";
   import { Canvas, useFrame, useThree } from "@react-three/fiber";
-  import { OrbitControls, Preload, Image as ImageImpl } from "@react-three/drei";
+  import { OrbitControls, Preload, Image as ImageImpl, type ImageProps } from "@react-three/drei";
   import { a as aThree } from "@react-spring/three";
   import * as THREE from "three";
 
@@ -47,12 +48,13 @@ import React, {
 
   const damp = THREE.MathUtils.damp;
 
-  function Image({ c = new THREE.Color(), ...props }) {
-    const ref = useRef(null!);
+  function Image({ ...props }: ImageProps) {
+    const c = useMemo(() => new THREE.Color(), []);
+    const ref = useRef<THREE.Mesh>(null!);
     const [hovered, hover] = useState(false);
 
     useFrame((state, delta) => {
-      ref.current.material.color.lerp(
+      (ref.current.material as THREE.MeshBasicMaterial).color.lerp(
         c.set(hovered ? "white" : "#ccc"),
         hovered ? 0.4 : 0.05
       );
@@ -78,9 +80,8 @@ import React, {
           <Image
             key={i}
             url={img}
-            alt={projects[i].title}
             position={positions[i]}
-            scale={[2, 2, 2]}
+            scale={2}
             onClick={() => onImageClick(i)}
           />
         ))}
