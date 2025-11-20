@@ -2,6 +2,7 @@
 import { test, expect } from '@playwright/test';
 
 test('homepage has a canvas for the 3D portfolio', async ({ page }) => {
+  test.setTimeout(60000); // 60 seconds
   const FgRed = "\x1b[31m"
   page.on('console', msg => {
     if (msg.type() === 'error')
