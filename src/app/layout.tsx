@@ -1,19 +1,16 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import type { Metadata } from 'next'
-import { Inter,Bebas_Neue } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
-import 'swiper/css'
-import 'swiper/css/bundle'
-import "aos/dist/aos.css"; 
-const inter = Bebas_Neue({
+
+const inter = Inter({
   subsets: ['latin'],
-  weight: '400',
-  variable:"--bebas_neue"
+  variable: '--font-inter',
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Portfolio website for Sivakumar',
+  title: 'Sivakumar | Full Stack Developer',
+  description: 'Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. Building premium web applications and CRM systems.',
+  keywords: ['Full Stack Developer', 'React', 'Next.js', 'Node.js', 'Web Developer', 'Sivakumar'],
 }
 
 export default function RootLayout({
@@ -22,8 +19,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.variable}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} font-sans antialiased bg-black text-white`}>
+        {children}
+      </body>
     </html>
-  );
+  )
 }
