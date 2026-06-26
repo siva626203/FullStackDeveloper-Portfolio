@@ -30,10 +30,10 @@ export default function Projects() {
       link: 'https://elyffevents.com.sg/',
     },
     {
-      title: 'Elyff Playground',
-      description: 'Singapore-based platform for managing and showcasing various playground projects.',
+      title: 'Elyff Concierge',
+      description: 'Singapore-based platform for managing and showcasing luxury concierge services, including booking and service management. Private Jet, Yacht, Limousine, and Event Management services are offered with a focus on high-end clientele.',
       tech: ['Next.js', 'Redux Thunk', 'Tailwind CSS', 'Framer Motion'],
-      link: 'https://elyffplayground.com.sg/',
+      link: 'https://www.elyffconcierge.com',
     },
     {
       title: 'Wavemaker',
